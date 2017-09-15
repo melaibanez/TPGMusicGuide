@@ -1,0 +1,14 @@
+import TPGMusicGuide.*
+describe "TEST TP GRUPAL" {
+	const juan = new Cantante()
+	
+	fixture {
+		juan.perteneceAGrupo("pimpinela")
+		juan.habilidad(30)
+	}
+test "Juan tiene de habilidad 30 y como pertenece a un grupo, su habilidad es 35" {
+
+	assert.equals(35,juan.habilidad())
+
+}
+}
